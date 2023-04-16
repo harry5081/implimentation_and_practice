@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Rectangle.cpp
+Rectangle.h
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Rectangle.h
+iostream
+-
+
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Rectangle.h
+

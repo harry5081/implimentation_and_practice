@@ -1,0 +1,4 @@
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/CMakeFiles/rebuild_cache.dir
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/CMakeFiles/CYH.dir
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/CMakeFiles/edit_cache.dir
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/CMakeFiles/main.dir

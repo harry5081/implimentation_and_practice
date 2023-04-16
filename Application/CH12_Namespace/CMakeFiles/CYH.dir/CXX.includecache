@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/CYH.cpp
+iostream
+-
+CYH.h
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/CYH.h
+
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/CYH.h
+

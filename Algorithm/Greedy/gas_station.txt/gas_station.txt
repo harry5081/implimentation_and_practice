@@ -1,0 +1,6 @@
+input: distance that full gas can reach
+       the whole distance of the route
+       the number of stations
+       the position of all stations
+output: the stations that we stop by
+Modules 07_03

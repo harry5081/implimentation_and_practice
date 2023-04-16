@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCYH.a  CMakeFiles/CYH.dir/CYH.cpp.o
+/usr/bin/ranlib libCYH.a

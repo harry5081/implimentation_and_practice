@@ -1,0 +1,2 @@
+advantage: efficient on adding or deleting data
+disadvatage: inefficient on searching 

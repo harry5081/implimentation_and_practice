@@ -1,0 +1,2 @@
+/usr/bin/ar qc libunordered_map.a  CMakeFiles/unordered_map.dir/unordered_map.cpp.o
+/usr/bin/ranlib libunordered_map.a

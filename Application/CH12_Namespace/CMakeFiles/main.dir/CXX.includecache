@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/CYH.h
+
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/main.cpp
+iostream
+-
+CYH.h
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/CYH.h
+namespace_v1.h
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/namespace_v1.h
+namespace_v2.h
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/namespace_v2.h
+
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/namespace_v1.h
+
+/home/harry5081/Cpp_NTU/Application/CH12_Namespace/namespace_v2.h
+

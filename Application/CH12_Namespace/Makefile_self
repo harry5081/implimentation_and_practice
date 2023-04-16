@@ -1,0 +1,43 @@
+CC = g++
+CFLAGS = -Wall -g
+LDFLAGS = 
+OBJFILES = CYH.o main.o
+TARGET = main
+# INCL_DIR=.
+# LIB=-Im
+
+
+
+# main: main.o
+# 	${CC} ${CFLAGS} -o main main.o
+
+# main.o: main.cpp
+# 	${CC} ${CFLAGS} -c main.cpp
+
+
+# main: main.o CYH.o
+# 	${CC} ${CFLAGS} -o main main.o  CYH.o
+
+# main.o: main.cpp CYH.h
+# 	${CC} ${CFLAGS} -c main.cpp
+
+# CYH.o: CYH.h
+
+# ${CC} -c CYH.cpp -I${INCL_DIR} 
+# ${CC} -c main.cpp -I${INCL_DIR} 
+# ${CC} *.o -o main ${LIB}
+
+
+#all: $(TARGET)
+	
+$(TARGET): $(OBJFILES)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES) $(LDFLAGS)
+
+CYH.o: CYH.cpp CYH.h
+	${CC} ${CFLAGS} -c CYH.cpp
+
+main.o: main.cpp CYH.h
+	${CC} ${CFLAGS} -c main.cpp
+
+clean:
+	rm -f $(OBJFILES) $(TARGET) *~

@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/main.dir/main.cpp.o  -o main libRectangle.a libCourse.a libCourseV2.a 

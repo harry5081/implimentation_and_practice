@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCourseV2.a  CMakeFiles/CourseV2.dir/Course_v2.cpp.o
+/usr/bin/ranlib libCourseV2.a

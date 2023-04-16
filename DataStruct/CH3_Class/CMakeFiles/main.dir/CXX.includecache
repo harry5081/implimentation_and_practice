@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Course.h
+iostream
+-
+
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Course_v2.h
+iostream
+-
+
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Course_v3.h
+iostream
+-
+
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Rectangle.h
+
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/main.cpp
+iostream
+-
+Rectangle.h
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Rectangle.h
+Course.h
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Course.h
+Course_v2.h
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Course_v2.h
+Course_v3.h
+/home/harry5081/Cpp_NTU/DataStruct/CH3_Class/Course_v3.h
+

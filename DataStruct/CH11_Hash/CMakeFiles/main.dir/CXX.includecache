@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/harry5081/Cpp_NTU/DataStruct/CH11_Hash/hash_func.cpp
+iostream
+-
+math.h
+-
+
+/home/harry5081/Cpp_NTU/DataStruct/CH11_Hash/main.cpp
+iostream
+-
+hash_func.cpp
+/home/harry5081/Cpp_NTU/DataStruct/CH11_Hash/hash_func.cpp
+unordered_map.cpp
+/home/harry5081/Cpp_NTU/DataStruct/CH11_Hash/unordered_map.cpp
+
+/home/harry5081/Cpp_NTU/DataStruct/CH11_Hash/unordered_map.cpp
+iostream
+-
+math.h
+-
+
