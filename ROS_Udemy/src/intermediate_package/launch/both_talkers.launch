@@ -1,0 +1,9 @@
+<launch>
+    <!-- <remap from="very_not_important_nessage" to="super_important_message"/> -->
+    <!-- <param name="output_topic" type="str" value="not_important_message"/>
+    <node name="talk_cpp" pkg="intermediate_package" type="talk_intermediate"/> -->
+
+    <node name="talk_cpp_two" pkg="intermediate_package" type="talk_intermediate">
+        <param name="output_topic" type="str" value="local_message"/>
+    </node>
+</launch>
