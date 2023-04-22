@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/mantis_interview.dir/main.cpp.o  -o mantis_interview -laaa -lstation_li src/mmi/libmmi_lib.a src/storage/libstorage_lib.a src/io/libio_lib.a src/manuf_line/libmanuf_line_lib.a 

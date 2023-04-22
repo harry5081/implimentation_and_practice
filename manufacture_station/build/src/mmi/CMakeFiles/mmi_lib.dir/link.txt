@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmmi_lib.a  CMakeFiles/mmi_lib.dir/mmi.cpp.o
+/usr/bin/ranlib libmmi_lib.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmanuf_line_lib.a  CMakeFiles/manuf_line_lib.dir/manuf_line.cpp.o
+/usr/bin/ranlib libmanuf_line_lib.a

@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 2.6)
+project(mantis_interview LANGUAGES C CXX ASM)
+
+add_library(mmiLib mmi.cpp)
+# cmake -DBUILD_SHARED_LIBS=ON ..
+# cmake -DBUILD_SHARED_LIBS=OFF ..
+
+# add_library(mmiLib STATIC mmi.cpp)
+# add_library(mmiLib SHARED mmi.cpp)
+
+add_executable(manufacture_line main.cpp station.cpp storage_unit.cpp i_o_file.cpp manuf_line.cpp)
+
+target_link_libraries(manufacture_line PUBLIC mmiLib)

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstation_lib.a  CMakeFiles/station_lib.dir/station.cpp.o
+/usr/bin/ranlib libstation_lib.a
