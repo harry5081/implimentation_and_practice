@@ -1,0 +1,7 @@
+sudo docker ps -a
+
+sudo docker build .
+
+sudo docker run -it image
+
+sudo docker run -p localPort:dockerPort image
