@@ -1,0 +1,9 @@
+git init
+git remote add origin ...@......
+git push origin local-branch:remote-branch
+git push -u origin master-> connecting the local branch to the remote branch(set up-stream)
+
+git remote -v
+git branch -r
+(remote tracking branch)
+         
