@@ -6,4 +6,10 @@ git push -u origin master-> connecting the local branch to the remote branch(set
 git remote -v
 git branch -r
 (remote tracking branch)
+
+git fetch -> update local repo
+git fetch <remote> <branch>
+
+git pull = git fetch + git merge
+git pull <remote> <branch>
          
