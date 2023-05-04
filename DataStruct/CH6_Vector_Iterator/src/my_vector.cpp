@@ -9,8 +9,7 @@ MyVector<T>::MyVector(int n){
     else{
         // p = (T*) malloc(sizeof(T) * n);
         p = (T*)calloc(n, sizeof(T));
-        len = n;
-        
+        len = n;        
     } 
 }
 
@@ -27,4 +26,26 @@ T MyVector<T>::Front(){
 template <typename T>
 T MyVector<T>::Back(){
    return *(p + len - 1);
+}
+
+template <typename T>
+T MyVector<T>::operator[](int n){
+    //TODO: if n > len-1
+   return *(p + n - 1);
+}
+
+template <typename T>
+int MyVector<T>::size(){
+   return len;
+}
+
+template <typename T>
+void MyVector<T>::empty(){
+    // TODO: chech answer
+    if( p == nullptr || len == 0){
+        return;
+    }
+    free(p);
+    p = nullptr;
+    len = 0;
 }

@@ -10,8 +10,12 @@ class MyVector{
         ~MyVector();
         T Front();
         T Back();
+        
+        T operator[](int n);
+        int size();
+        void empty();
+        
         // TODO:
-        // [] overload
         // at
         // size
         // empty

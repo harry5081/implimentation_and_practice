@@ -12,5 +12,10 @@ int main(){
     std::cout<< myVector.Front() <<std::endl;
     std::cout<< myVector.Back() <<std::endl;
 
+    std::cout<<myVector[0] <<std::endl;
+    std::cout<<myVector.size() <<std::endl;
+    myVector.empty();
+    std::cout<<myVector.size() <<std::endl;
+
     return 0;
 }
