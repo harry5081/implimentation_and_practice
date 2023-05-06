@@ -20,14 +20,18 @@ class MyVector{
         void push_back(T data);
         void pop_back();
 
-        //TODO:
-        // insert(int index)
-        // erase(int index)
-        // erase(int begin_index, int end_index)
-        // clear()
+        void insert(int index, T data);
+        void erase(int index);
+        void erase(int begin_index, int end_index);
+        void clear();
+
+        void resize(int n);
+        void reserve(int n);
+
     private:
         T* p;
         int len;
+        int capacity;
 };
 
 #endif
