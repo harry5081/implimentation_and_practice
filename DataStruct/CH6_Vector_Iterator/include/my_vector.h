@@ -10,15 +10,21 @@ class MyVector{
         ~MyVector();
         T Front();
         T Back();
-        
-        T operator[](int n);
+
+        // return reference(left value, accept assign operation)
+        T& At(int index);            
+        T& operator[](int index);        
         int size();
-        void empty();
+        bool is_empty();
         
-        // TODO:
-        // at
-        // size
-        // empty
+        void push_back(T data);
+        void pop_back();
+
+        //TODO:
+        // insert(int index)
+        // erase(int index)
+        // erase(int begin_index, int end_index)
+        // clear()
     private:
         T* p;
         int len;
