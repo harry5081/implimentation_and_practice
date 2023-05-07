@@ -17,7 +17,7 @@ MyVector<T>::MyVector(int n){
 
 template <typename T>
 MyVector<T>::~MyVector(){
-   free(p);
+    free(p);
 }
 
 template <typename T>
@@ -189,7 +189,7 @@ void MyVector<T>::erase(int begin_index, int end_index){
     if(end_index<=begin_index){
         return;
     }
-    for(int i = 0; i<end_index-begin_index; i++){
+    for(int i = 0; i<end_index-begin_index+1; i++){
         *(p+begin_index+i) = *(p+end_index+i);
     }
     len = len-(end_index-begin_index);
@@ -224,10 +224,10 @@ void MyVector<T>::erase(int begin_index, int end_index){
 
 template <typename T>
 void MyVector<T>::clear(){
-    free(p);
+    //free(p); // will cause "double free detected in tcache 2" problem
     //p = nullptr; //does not need
     len = 0;
-    clear = 0;
+    capacity = 0;
 }
 
 template <typename T>
