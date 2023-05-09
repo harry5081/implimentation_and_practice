@@ -4,8 +4,8 @@ git push origin local-branch:remote-branch
 git push -u origin master-> connecting the local branch to the remote branch(set up-stream)
 
 git remote -v
-git branch -r
-(remote tracking branch)
+git branch -r (remote tracking branch)
+git branch -d (to delete branch)
 
 git fetch -> update local repo
 git fetch <remote> <branch>
@@ -14,7 +14,10 @@ git pull = git fetch + git merge
 git pull <remote> <branch>
 (not recommended if there are uncommited changes)
 
-git branch -d (to delete branch)
-
 git log --oneline
-         
+
+git diff (compare workspace with staging area)(unstage changes)
+git diff HEAD (compare workspace with last commit)
+git diff HEAD <file>
+git diff --staged (--cached) (staging area and last commit)
+
