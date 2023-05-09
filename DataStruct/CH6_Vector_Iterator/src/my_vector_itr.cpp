@@ -1,7 +1,7 @@
-#include "my_vector.h"
+#include "my_vector_itr.h"
 #include <iostream>
 template <typename T>
-MyVector<T>::MyVector(int n){    
+VectorItr::MyVector<T>::MyVector(int n){    
     if(n == 0){
         p = nullptr;
         len = n;
@@ -12,46 +12,47 @@ MyVector<T>::MyVector(int n){
         p = (T*)calloc(n, sizeof(T));
         len = n;
         capacity = n;   
-    } 
+    }
+    
 }
 
 template <typename T>
-MyVector<T>::~MyVector(){
+VectorItr::MyVector<T>::~MyVector(){
     free(p);
 }
 
 template <typename T>
-T MyVector<T>::Front(){
+T VectorItr::MyVector<T>::Front(){
    return *p;
 }
 
 template <typename T>
-T MyVector<T>::Back(){
+T VectorItr::MyVector<T>::Back(){
    return *(p + len - 1);
 }
 
 template <typename T>
-T& MyVector<T>::operator[](int index){
+T& VectorItr::MyVector<T>::operator[](int index){
    return *(p + index);
 }
 
 template <typename T>
-T& MyVector<T>::At(int index){
+T& VectorItr::MyVector<T>::At(int index){
    return *(p + index);
 }
 
 template <typename T>
-int MyVector<T>::size(){
+int VectorItr::MyVector<T>::size(){
    return len;
 }
 
 template <typename T>
-bool MyVector<T>::is_empty(){
+bool VectorItr::MyVector<T>::is_empty(){
     return len == 0;
 }
 
 template <typename T>
-void MyVector<T>::push_back(T data){
+void VectorItr::MyVector<T>::push_back(T data){
     if(len == capacity){
         if(capacity == 0){
             reserve(1);
@@ -64,37 +65,14 @@ void MyVector<T>::push_back(T data){
     len++;
 }
 
-// template <typename T>
-// void MyVector<T>::push_back(T data){
-//     T *p_tmp = (T*) malloc(sizeof(T)*(len+1));
-//     for(int i = 0; i<len; i++){
-//         *(p_tmp+i) = *(p+i);
-//     }
-//     *(p_tmp+len) = data;
-//     len++;
-//     free(p);
-//     p = p_tmp;
-// }
-
 template <typename T>
-void MyVector<T>::pop_back(){
+void VectorItr::MyVector<T>::pop_back(){
     //*(p+len) = 0; //does not need
     len--;    
 }
 
-// template <typename T>
-// void MyVector<T>::pop_back(){
-//     T *p_tmp = (T*) malloc(sizeof(T)*(len-1));
-//     for(int i = 0; i<len-1; i++){
-//         *(p_tmp+i) = *(p+i);
-//     }
-//     len--;
-//     free(p);
-//     p = p_tmp;
-// }
-
 template <typename T>
-void MyVector<T>::insert(int index, T data){
+void VectorItr::MyVector<T>::insert(int index, T data){
     if(index > size()-1){
         return;
     }
@@ -117,27 +95,8 @@ void MyVector<T>::insert(int index, T data){
     len++;
 }
 
-// template <typename T>
-// void MyVector<T>::insert(int index, T data){
-//     T *p_tmp = (T*) malloc(sizeof(T)*(len+1));
-//     for(int i = 0; i<len; i++){
-//         if(i < index){
-//             *(p_tmp+i) = *(p+i);
-//         }
-//         else if(i == index){
-//             *(p_tmp+i) = data;
-//         }
-//         else{
-//             *(p_tmp+i+1) = *(p+i);
-//         }        
-//     }
-//     len++;
-//     free(p);
-//     p = p_tmp;
-// }
-
 template <typename T>
-void MyVector<T>::erase(int index){
+void VectorItr::MyVector<T>::erase(int index){
     if(is_empty()){
         return;
     }
@@ -150,33 +109,8 @@ void MyVector<T>::erase(int index){
     len--;
 }
 
-// template <typename T>
-// void MyVector<T>::erase(int index){
-//     if(is_empty()){
-//         return;
-//     }
-//     if(index > size()-1){
-//         return;
-//     }
-//     T *p_tmp = (T*) malloc(sizeof(T)*(len-1));
-//     for(int i = 0; i<len; i++){
-//         if(i < index){
-//             *(p_tmp+i) = *(p+i);
-//         }
-//         else if(i == index){
-//             continue;
-//         }
-//         else{
-//             *(p_tmp+i-1) = *(p+i);
-//         }        
-//     }
-//     len--;
-//     free(p);
-//     p = p_tmp;
-// }
-
 template <typename T>
-void MyVector<T>::erase(int begin_index, int end_index){
+void VectorItr::MyVector<T>::erase(int begin_index, int end_index){
     if(is_empty()){
         return;
     }
@@ -196,34 +130,8 @@ void MyVector<T>::erase(int begin_index, int end_index){
     
 }
 
-// template <typename T>
-// void MyVector<T>::erase(int begin_index, int end_index){
-//     if(is_empty()){
-//         return;
-//     }
-//     if(begin_index<0){
-//         return;
-//     }
-//     if(end_index>size()-1){
-//         return;
-//     }
-//     if(end_index<=begin_index){
-//         return;
-//     }
-//     T *p_tmp = (T*) malloc(sizeof(T)*(len-(end_index-begin_index)));
-//     for(int i = 0; i<begin_index; i++){
-//         *(p_tmp+i) = *(p+i);
-//     }
-//     for(int i = end_index; i<len; i++){
-//         *(p_tmp+i-(end_index-begin_index)) = *(p+i);
-//     }
-//     len=len-(end_index-begin_index);
-//     free(p);
-//     p = p_tmp;
-// }
-
 template <typename T>
-void MyVector<T>::clear(){
+void VectorItr::MyVector<T>::clear(){
     //free(p); // will cause "double free detected in tcache 2" problem
     //p = nullptr; //does not need
     len = 0;
@@ -231,7 +139,7 @@ void MyVector<T>::clear(){
 }
 
 template <typename T>
-void MyVector<T>::resize(int n){
+void VectorItr::MyVector<T>::resize(int n){
     if(n < 0){
         return;
     }
@@ -241,7 +149,7 @@ void MyVector<T>::resize(int n){
 }
 
 template <typename T>
-void MyVector<T>::reserve(int n){
+void VectorItr::MyVector<T>::reserve(int n){
     if(n < len){
         return;
     }
@@ -253,3 +161,30 @@ void MyVector<T>::reserve(int n){
     free(p);
     p = p_tmp;
 }
+
+template <typename T>
+VectorItr::MyVector<T>::Iterator::Iterator(T* ptr){
+    itr = ptr;
+}
+
+template <typename T>
+void VectorItr::MyVector<T>::Iterator::operator++(){
+    itr++;
+}
+
+template <typename T>
+void VectorItr::MyVector<T>::Iterator::operator--(){
+    itr--;
+}
+
+template <typename T>
+void VectorItr::MyVector<T>::Iterator::operator++(int){
+    itr++;
+}
+
+template <typename T>
+void VectorItr::MyVector<T>::Iterator::operator--(int){
+    itr--;
+}
+
+//10:59

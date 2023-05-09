@@ -1,7 +1,9 @@
-#ifndef MY_VECTOR
-#define MY_VECTOR
+#ifndef MY_VECTOR_ITR
+#define MY_VECTOR_ITR
  
 #include <stdlib.h> 
+
+namespace VectorItr{
 
 template <typename T>
 class MyVector{
@@ -28,10 +30,31 @@ class MyVector{
         void resize(int n);
         void reserve(int n);
 
+        class   Iterator{
+            private:
+                T* itr;
+            public:
+                Iterator(T* = nullptr);
+                void operator++(); // ++Iterator
+                void operator--(); // --Iterator
+
+                void operator++(int); // Iterator++
+                void operator--(int); // Iterator--
+
+                bool operator==(Iterator&); //faster by passing reference
+                bool operator!=(Iterator&);
+
+                void operator=(Iterator&);
+
+                T operator*();
+        };
+
     private:
         T* p;
         int len;
         int capacity;
+};
+
 };
 
 #endif
