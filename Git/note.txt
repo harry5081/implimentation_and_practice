@@ -13,4 +13,8 @@ git fetch <remote> <branch>
 git pull = git fetch + git merge
 git pull <remote> <branch>
 (not recommended if there are uncommited changes)
+
+git branch -d (to delete branch)
+
+git log --oneline
          
