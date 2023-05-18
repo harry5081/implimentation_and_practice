@@ -3,6 +3,9 @@ git remote add origin ...@......
 git push origin local-branch:remote-branch
 git push -u origin master-> connecting the local branch to the remote branch(set up-stream)
 
+git rm (remove staged and workspace file)
+git rm --cached (remove only staged file)
+
 git remote -v
 git branch -r (remote tracking branch)
 git branch -d (to delete branch)
