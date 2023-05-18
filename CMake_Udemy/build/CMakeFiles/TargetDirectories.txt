@@ -1,0 +1,2 @@
+/home/harry5081/Learn/practice_and_grow/CMake_Udemy/build/CMakeFiles/edit_cache.dir
+/home/harry5081/Learn/practice_and_grow/CMake_Udemy/build/CMakeFiles/rebuild_cache.dir

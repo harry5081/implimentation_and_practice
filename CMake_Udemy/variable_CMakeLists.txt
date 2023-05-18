@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.0)
+
+project(cache_example)
+
+# cache variable
+set(NON_CACHE_VAR "Initial value non_cache")
+message(${NON_CACHE_VAR})
+
+set(CACHE_VAR "Initial value cache" CACHE STRING "This is a cache variable")
+message(${CACHE_VAR})
+
+# option
+option(MY_OPTION "Help for MY_OPTION OFF")
+set(MY_OPTION2 OFF CACHE BOOL "Help for MY_OPTION OFF")
+
+# path
+
+set(CACHE_VAR_FILE_PATH "/home/harry5081/" CACHE FILEPATH "Some documentation for CACHE_VAR_FILE_PATH")
+set(CACHE_VAR_PATH "/home/harry5081/" CACHE PATH "Some documentation for CACHE_VAR_PATH")
+set(CACHE_VAR_INTERNAL "aabbcc" CACHE INTERNAL "Some documentation for CACHE_VAR_INTERNAL")
+
+message(${CACHE_VAR})

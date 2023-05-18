@@ -23,3 +23,10 @@ git diff --staged (--cached) (staging area and last commit)
 
 git diff <branch1>..<branch2>
 
+git stash
+git stash pop
+git stash apply (won't remove the stash from stash list)
+git stash apply stash@{2}
+git stash list
+git stash drop stash@{2}
+git stash clear
