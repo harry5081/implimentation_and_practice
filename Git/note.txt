@@ -33,3 +33,6 @@ git stash apply stash@{2}
 git stash list
 git stash drop stash@{2}
 git stash clear
+
+git checkout <commit-hash> (detached HEAD)
+git checkout HEAD~1 (one commit before the HEAD)
