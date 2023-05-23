@@ -54,10 +54,16 @@ int main(){
     myVector2.push_back(5);
     myVector2.push_back(4);
     myVector2.push_back(3);
+    myVector2.push_back(3);
+    myVector2.push_back(3);
     myVector2.push_back(909);
     myVector2.push_back(808);
     myVector2.push_back(707);
+    myVector2.push_back(3);
+    myVector2.push_back(3);
+    myVector2.push_back(3);
     myVector2.push_back(606);
+    myVector2.push_back(3);
 
 
     for(int i = 0; i<myVector2.size(); i++){
@@ -115,7 +121,14 @@ int main(){
         std::cout << *itr << " ";
     }
     std::cout << std::endl;
+
+    std::cout << *(VectorItr::find(myVector2,3)+2)<< std::endl;
     
+    remove(myVector2, 3);
+    for(VectorItr::MyVector<int>::Iterator itr=myVector2.begin(); itr != myVector2.end(); ++itr){
+        std::cout << *itr << " ";
+    }
+    std::cout << std::endl;
     
     
     return 0;

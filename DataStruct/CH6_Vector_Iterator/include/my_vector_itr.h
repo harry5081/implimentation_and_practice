@@ -21,7 +21,7 @@ class MyVector{
                 void operator++(int); // Iterator++
                 void operator--(int); // Iterator--
 
-                bool operator==(Iterator&); //faster by passing reference
+                bool operator==(Iterator); //faster by passing reference
                 bool operator!=(Iterator); // call by reference does not work
                                             // why?
 
@@ -35,6 +35,8 @@ class MyVector{
                 int operator-(Iterator);
 
                 T& operator*();
+
+                
         };        
 
         MyVector(int n = 0);
@@ -61,13 +63,22 @@ class MyVector{
         void clear();
 
         void resize(int n);
-        void reserve(int n);        
+        void reserve(int n);     
+
+        // Iterator find(T data);
+        // void remove(T data);   
 
     private:
         T* p;
         int len;
         int capacity;
 };
+
+template<typename T>
+typename MyVector<T>::Iterator find(MyVector<T> v, T data);
+
+template<typename T>
+typename MyVector<T>::Iterator remove(MyVector<T> v, T data);
 
 };
 

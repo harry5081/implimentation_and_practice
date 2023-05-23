@@ -18,7 +18,7 @@ VectorItr::MyVector<T>::MyVector(int n){
 
 template <typename T>
 VectorItr::MyVector<T>::~MyVector(){
-    free(p);
+    // free(p);
 }
 
 template <typename T>
@@ -204,7 +204,7 @@ void VectorItr::MyVector<T>::Iterator::operator--(int){
 }
 
 template <typename T>
-bool VectorItr::MyVector<T>::Iterator::operator==(Iterator& itr2){
+bool VectorItr::MyVector<T>::Iterator::operator==(Iterator itr2){
     return ptr == itr2.ptr;
 }
 
@@ -258,4 +258,29 @@ template <typename T>
 int VectorItr::MyVector<T>::Iterator::operator-(Iterator itr2){
     return (ptr - itr2.ptr);
 }
-//25:35
+
+template <typename T>
+typename VectorItr::MyVector<T>::Iterator VectorItr::find(MyVector<T> v, T data){
+    for(auto itr = v.begin(); itr != v.end(); itr++){
+        if(*itr == data){
+            return itr;
+        }
+    }
+    return v.end();
+}
+
+template <typename T>
+typename VectorItr::MyVector<T>::Iterator VectorItr::remove(MyVector<T> v, T data){
+    int cnt = 0;
+    for(auto itr = v.begin();itr != v.end(); itr++){
+        if(*itr == data){
+            continue;
+        }
+        *(v.begin()+cnt) = *itr;
+        cnt++;
+    }
+    for(auto itr = v.begin()+cnt; itr != v.end(); itr++){
+        *itr = data;
+    }
+    return v.begin()+cnt;
+}

@@ -3,6 +3,6 @@ project(vector LANGUAGES C CXX)
 
 add_subdirectory(src)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} mission.cpp)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC my_vector_lib)
