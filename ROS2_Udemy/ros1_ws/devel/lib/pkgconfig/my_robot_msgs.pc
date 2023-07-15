@@ -1,0 +1,8 @@
+prefix=/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros1_ws/devel
+
+Name: my_robot_msgs
+Description: Description of my_robot_msgs
+Version: 0.0.0
+Cflags: -I/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros1_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

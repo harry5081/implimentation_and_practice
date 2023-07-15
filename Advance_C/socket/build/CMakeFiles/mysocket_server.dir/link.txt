@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mysocket_server.dir/main.cpp.o -o mysocket_server 

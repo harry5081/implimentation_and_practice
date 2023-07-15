@@ -1,0 +1,18 @@
+[0.971s] Invoking command in '/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_py': PYTHONPATH=/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_py/prefix_override:/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_py/build --no-deps install_data
+[1.304s] running develop
+[1.511s] running egg_info
+[1.511s] writing ros2_app_py.egg-info/PKG-INFO
+[1.512s] writing dependency_links to ros2_app_py.egg-info/dependency_links.txt
+[1.512s] writing entry points to ros2_app_py.egg-info/entry_points.txt
+[1.512s] writing requirements to ros2_app_py.egg-info/requires.txt
+[1.512s] writing top-level names to ros2_app_py.egg-info/top_level.txt
+[1.556s] reading manifest file 'ros2_app_py.egg-info/SOURCES.txt'
+[1.557s] writing manifest file 'ros2_app_py.egg-info/SOURCES.txt'
+[1.602s] running build_ext
+[1.603s] Creating /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_py/lib/python3.8/site-packages/ros2-app-py.egg-link (link to .)
+[1.604s] Installing number_counter script to /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_py/lib/ros2_app_py
+[1.604s] Installing number_publisher script to /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_py/lib/ros2_app_py
+[1.605s] 
+[1.605s] Installed /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_py
+[1.605s] running install_data
+[1.648s] Invoked command in '/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_py' returned '0': PYTHONPATH=/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_py/prefix_override:/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_py/build --no-deps install_data

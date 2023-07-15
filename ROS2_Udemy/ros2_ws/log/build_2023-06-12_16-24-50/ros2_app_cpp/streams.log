@@ -1,0 +1,20 @@
+[0.050s] Invoking command in '/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py:/opt/ros/foxy /usr/local/bin/cmake --build /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_cpp -- -j4 -l4
+[0.462s] Invoked command in '/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py:/opt/ros/foxy /usr/local/bin/cmake --build /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_cpp -- -j4 -l4
+[0.553s] Invoking command in '/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py:/opt/ros/foxy /usr/local/bin/cmake --install /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_cpp
+[0.559s] -- Install configuration: ""
+[0.561s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ament_index/resource_index/package_run_dependencies/ros2_app_cpp
+[0.562s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ament_index/resource_index/parent_prefix_path/ros2_app_cpp
+[0.562s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/environment/ament_prefix_path.sh
+[0.562s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/environment/ament_prefix_path.dsv
+[0.562s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/environment/path.sh
+[0.562s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/environment/path.dsv
+[0.563s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/local_setup.bash
+[0.563s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/local_setup.sh
+[0.563s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/local_setup.zsh
+[0.563s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/local_setup.dsv
+[0.563s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/package.dsv
+[0.563s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ament_index/resource_index/packages/ros2_app_cpp
+[0.564s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/cmake/ros2_app_cppConfig.cmake
+[0.564s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/cmake/ros2_app_cppConfig-version.cmake
+[0.564s] -- Up-to-date: /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/install/ros2_app_cpp/share/ros2_app_cpp/package.xml
+[0.567s] Invoked command in '/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py:/opt/ros/foxy /usr/local/bin/cmake --install /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/build/ros2_app_cpp
