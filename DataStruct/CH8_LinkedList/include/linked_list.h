@@ -27,14 +27,5 @@ class Linked_List{
 
         void Clear();
         void Reverse();
-
-
 };
-
-
-
-
-
-
-
 #endif

@@ -12,10 +12,31 @@ template <typename T>
 class Double_Linked_List{
     private:
         Node<T>* First;
-        Node<T>* Last;
-        
+        Node<T>* Last;        
     public:
-        Linked_List();
+        class Iterator{
+            private:
+                T* ptr;
+            public:
+                Iterator(T* = nullptr);
+                void operator++(); // ++Iterator
+                void operator--(); // --Iterator
+                void operator++(int); // Iterator++
+                void operator--(int); // Iterator--
+                bool operator==(Iterator); //faster by passing reference
+                bool operator!=(Iterator); // call by reference does not work why?
+                void operator=(Iterator);
+                bool operator>(Iterator);
+                bool operator>=(Iterator);
+                bool operator<(Iterator);
+                bool operator<=(Iterator);
+                Iterator operator+(int);
+                Iterator operator-(int);
+                int operator-(Iterator);
+                T& operator*();
+        };
+
+        Double_Linked_List();
         void Print_List();
         int Search_List(T);
 
