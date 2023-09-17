@@ -1,6 +1,0 @@
-/home/harry5081/Cpp_NTU/DataStruct/CH8_LinkedList/build/CMakeFiles/rebuild_cache.dir
-/home/harry5081/Cpp_NTU/DataStruct/CH8_LinkedList/build/CMakeFiles/linked_list.dir
-/home/harry5081/Cpp_NTU/DataStruct/CH8_LinkedList/build/CMakeFiles/edit_cache.dir
-/home/harry5081/Cpp_NTU/DataStruct/CH8_LinkedList/build/src/CMakeFiles/rebuild_cache.dir
-/home/harry5081/Cpp_NTU/DataStruct/CH8_LinkedList/build/src/CMakeFiles/linked_list_lib.dir
-/home/harry5081/Cpp_NTU/DataStruct/CH8_LinkedList/build/src/CMakeFiles/edit_cache.dir
