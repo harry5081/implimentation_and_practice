@@ -1,0 +1,3 @@
+[submodule "kalman-filter-course-assignments"]
+	path = kalman-filter-course-assignments
+	url = https://github.com/WuStangDan/kalman-filter-course-assignments.git
