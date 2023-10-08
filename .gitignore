@@ -5,3 +5,4 @@ CMake_Udemy/
 manufacture_station/CMakeLists.txt
 */build/*
 DataStruct/CH8_LinkedList/build/
+CH9_Stack/build/*
