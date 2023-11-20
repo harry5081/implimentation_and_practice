@@ -1,0 +1,8 @@
+- Graph
+vertices, edge
+unweighted/ weighted graph
+undirected/ directed graph
+cyclic/ acyclic graph 
+
+tree is a special case of directed acyclic graphs
+
