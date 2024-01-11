@@ -1,0 +1,11 @@
+Casadi/Rootfinding/__pycache__
+DataStruct/CH6_Vector_Iterator/build/
+.vscode/
+CMake_Udemy/
+manufacture_station/CMakeLists.txt
+*/build/*
+DataStruct/CH8_LinkedList/build/
+CH9_Stack/build/*
+Advance_cpp/*/build/
+*build/
+*CMakeFiles/

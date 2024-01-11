@@ -1,0 +1,26 @@
+class TYPE{
+    public: 
+        // copy constructor
+        TYPE(const TYPE &t);
+        // TYPE(const TYPE &t) = delete;           
+
+        // copy assignment operator
+        TYPE& operator=(const TYPE&){   
+            ...
+            return (*this);
+        }
+        // TYPE& operator=(const TYPE&) = delete;
+}
+
+int main(){
+    const TYPE t1;
+    TYPE t2(t1);
+    TYPE t3 = t1;
+    TYPE& t3_ref = t1;
+
+    t2 = t1;
+    // t2.operator=(t1);
+
+    TYPE* objPtr = new TYPE();
+    delete objPtr;
+}
