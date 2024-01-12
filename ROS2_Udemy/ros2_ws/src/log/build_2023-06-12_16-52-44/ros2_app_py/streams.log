@@ -1,0 +1,19 @@
+[1.098s] Invoking command in '/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/build/ros2_app_py': PYTHONPATH=/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/build/ros2_app_py/prefix_override:/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/build/ros2_app_py/build --no-deps install_data
+[1.426s] running develop
+[1.639s] running egg_info
+[1.639s] writing ros2_app_py.egg-info/PKG-INFO
+[1.640s] writing dependency_links to ros2_app_py.egg-info/dependency_links.txt
+[1.640s] writing entry points to ros2_app_py.egg-info/entry_points.txt
+[1.640s] writing requirements to ros2_app_py.egg-info/requires.txt
+[1.640s] writing top-level names to ros2_app_py.egg-info/top_level.txt
+[1.684s] reading manifest file 'ros2_app_py.egg-info/SOURCES.txt'
+[1.686s] writing manifest file 'ros2_app_py.egg-info/SOURCES.txt'
+[1.734s] running build_ext
+[1.735s] Creating /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py/lib/python3.8/site-packages/site.py
+[1.738s] Creating /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py/lib/python3.8/site-packages/ros2-app-py.egg-link (link to .)
+[1.739s] Installing number_counter script to /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py/lib/ros2_app_py
+[1.739s] Installing number_publisher script to /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py/lib/ros2_app_py
+[1.740s] 
+[1.740s] Installed /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/build/ros2_app_py
+[1.740s] running install_data
+[1.783s] Invoked command in '/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/build/ros2_app_py' returned '0': PYTHONPATH=/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/build/ros2_app_py/prefix_override:/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/install/ros2_app_py/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros2_ws/src/build/ros2_app_py/build --no-deps install_data

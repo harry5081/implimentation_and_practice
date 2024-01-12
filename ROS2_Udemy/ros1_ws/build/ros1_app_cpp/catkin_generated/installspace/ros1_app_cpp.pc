@@ -1,0 +1,8 @@
+prefix=/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros1_ws/install
+
+Name: ros1_app_cpp
+Description: Description of ros1_app_cpp
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,4 @@
+/home/harry5081/Learn/practice_and_grow/Advance_C/socket/build/CMakeFiles/mysocket_server.dir
+/home/harry5081/Learn/practice_and_grow/Advance_C/socket/build/CMakeFiles/mysocket_client.dir
+/home/harry5081/Learn/practice_and_grow/Advance_C/socket/build/CMakeFiles/edit_cache.dir
+/home/harry5081/Learn/practice_and_grow/Advance_C/socket/build/CMakeFiles/rebuild_cache.dir

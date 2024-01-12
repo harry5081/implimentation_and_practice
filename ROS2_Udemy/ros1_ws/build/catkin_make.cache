@@ -1,0 +1,2 @@
+my_robot_bringup:my_robot_msgs:ros1_app_cpp:ros1_app_py
+-DCATKIN_DEVEL_PREFIX=/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros1_ws/devel -DCMAKE_INSTALL_PREFIX=/home/harry5081/Learn/practice_and_grow/ROS2_Udemy/ros1_ws/install -G Unix Makefiles
