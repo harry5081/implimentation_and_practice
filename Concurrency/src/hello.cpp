@@ -3,6 +3,7 @@
 #include <functional>
 
 #include <vector>
+#include <mutex>
 
 #define NUM_THREADS 10
 
@@ -70,18 +71,32 @@ void RangeSum(int& result, int begin, int end){
     }
 }
 // 2-8
-int Sum(int n){
+int SumParallelDivide(int n){
     std::vector<int> rangeSumResult(3);
     std::vector<std::thread> threads;
-    for(){ //1:36
+    //for(){ //1:36 // refer to 2-8 slide
 
-    }
+    //}
 
+    return 0;
+
+}
+
+// 3-3
+void AddWithLock(int& result, int i, std::mutex& m){
+    
+    m.lock();
+    int s = result + i;
+    // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    result = s;
+    std::cout << result << " ";
+    m.unlock();
 }
 
 int main(){
     std::cout << "This is main Thread!" << std::endl;
-    
+    std::cout << "The hardware supports " << std::thread::hardware_concurrency() << " threads" << std::endl;
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     // one thread
     std::thread t(Hello);
     t.join();
@@ -114,6 +129,26 @@ int main(){
 
     // 2-7
     std::cout<< "Sum Wrong:"<< SumParallelWrong(10)<< std::endl;
+
+    // 2-8
+    std::thread lambda_t([](){
+        std::cout << "This is lambda thread" << std::endl;
+    });
+    lambda_t.join();
+
+    // 2-10 lambda expression for multi-thread
+
+    // 3-3 mutex
+    std::cout << "MUTEX" << std::endl; 
+    std::mutex m;
+    std::vector<std::thread> threads3;
+    int result3 = 0;
+    for(int i = 0; i<10; i++){
+        threads3.emplace_back(AddWithLock, std::ref(result3), i, std::ref(m));
+    }
+    for(auto& t : threads3){
+        t.join();
+    }
 
     
 
