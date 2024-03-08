@@ -85,12 +85,14 @@ int SumParallelDivide(int n){
 // 3-3
 void AddWithLock(int& result, int i, std::mutex& m){
     
-    m.lock();
+    // 3-4
+    std::lock_guard<std::mutex> l(m);
+    // m.lock();
     int s = result + i;
     // std::this_thread::sleep_for(std::chrono::milliseconds(1000));
     result = s;
     std::cout << result << " ";
-    m.unlock();
+    // m.unlock();
 }
 
 int main(){
@@ -149,6 +151,9 @@ int main(){
     for(auto& t : threads3){
         t.join();
     }
+
+    // 3-7
+    std::recursive_mutex recur_m;
 
     
 
